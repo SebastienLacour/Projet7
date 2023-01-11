@@ -1,0 +1,64 @@
+.content-image {
+    height: 100%;
+    width: 95%;
+    display: flex;
+    position: relative;
+
+}
+
+.image {
+    width: 1500px;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.arrow-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-arrow {
+    position: relative;
+    top: 150px;
+    height: 0;
+    color: white;
+    font-size: 100px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.right-arrow {
+    position: relative;
+    top: 150px;
+    height: 0;
+    color: white;
+    font-size: 100px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.indexers {
+    position: relative;
+    top: 420px;
+    height: 0;
+    color: white;
+}
+
+@media(max-width: 960px) {
+    .content-image{
+        width: 95%;
+    }
+        .image{
+        width: 1000px;
+    }
+}
+
+@media(max-width: 600px) {
+    .content-image{
+        width: 95%;
+    }
+    .image{
+        width: 1000px;
+    }
+
+}
