@@ -4,12 +4,13 @@ body{
 }
 
 .error__main{
-    margin-bottom: 200px;
+    margin-bottom: 150px;
+    text-align: center;
 }
 
 .error__title{
-    font-size: 288px;
-    margin-top: 10px;
+    font-size: 230px;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 
@@ -25,14 +26,14 @@ body{
 }
 
 @media(max-width:960px) {
+    
     .error__title{
         font-size: 144px;
     }
 
     .error__message{
-        text-align: center;
-        margin-left: 70px;
-        width: 70%;
         font-size: 20px;
+        margin-left: 45px;
+        margin-right: 45px;
     }
 }
