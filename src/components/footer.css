@@ -1,0 +1,18 @@
+.footer{
+    height: 150px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+.footer__logo{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+@media(max-width:960px){
+    .footer{
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
