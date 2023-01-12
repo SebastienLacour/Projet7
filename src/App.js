@@ -11,9 +11,9 @@ import {Routes, Route} from "react-router-dom"
 import { useState, useEffect } from 'react';
 
 // Importation des différents composants qui affichera les différentes pages de l'application
-import Home from './components/home';
-import Apropos from './components/aPropos';
-import Logement from './components/logement';
+import Home from './components/home/home';
+import Apropos from './components/a_propos/aPropos';
+import Logement from './components/logement/logement';
 import NotFound from './components/pageNotFound';
 
 function App() {
@@ -26,8 +26,6 @@ function App() {
     fetch('https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json')
       .then((response) => response.json())
       .then((json) => {
-        console.log(json)
-        console.log("data", data)
         setData(json)
       })
       .catch((error) => console.log(error))
@@ -37,9 +35,6 @@ function App() {
   useEffect(() => {
     fetchData()
   }, [])
-
-  console.log("data", data)
-
 
   return (
     // Mise en place des routes permettant d'afficher les 4 pages de l'application, en plaçant en props la variable data permettant l'affichage des différents appartements ainsi que leurs informations
