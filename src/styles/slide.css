@@ -3,62 +3,38 @@
     width: 95%;
     display: flex;
     position: relative;
+    border-radius: 25px;
 
 }
 
 .image {
-    width: 1500px;
-    height: 100%;
+    height: 450px;
+    width: 100%;
     border-radius: 25px;
 }
 
 .arrow-content{
     display: flex;
     justify-content: space-between;
+    width: 93%;
+    height: 50px;
+    line-height: 30px;
+    color: white;
+    margin-left: 1%;
+    position: relative;
+    bottom: 260px;
+    font-size: 85px;
 }
 
-.left-arrow {
-    position: relative;
-    top: 150px;
-    height: 0;
-    color: white;
-    font-size: 100px;
-    z-index: 1;
+.arrow{
     cursor: pointer;
+    background: rgba(128, 128, 128, 0.6);
 }
 
-.right-arrow {
+.indexers{
     position: relative;
-    top: 150px;
-    height: 0;
+    bottom: 90px;
     color: white;
-    font-size: 100px;
-    z-index: 1;
-    cursor: pointer;
-}
-
-.indexers {
-    position: relative;
-    top: 420px;
-    height: 0;
-    color: white;
-}
-
-@media(max-width: 960px) {
-    .content-image{
-        width: 95%;
-    }
-        .image{
-        width: 1000px;
-    }
-}
-
-@media(max-width: 600px) {
-    .content-image{
-        width: 95%;
-    }
-    .image{
-        width: 1000px;
-    }
+    background: rgba(128, 128, 128, 0.6);
 
 }
